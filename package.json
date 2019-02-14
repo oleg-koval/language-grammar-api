@@ -1,25 +1,35 @@
 {
   "name": "language-tool",
   "version": "1.0.0",
-  "description": "",
+  "description": "API wrapper for LanguageTool (grammar check) API based as plugin for Trembita.js",
   "main": "lib/index",
   "types": "lib/index",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "start": "npm run build:live",
     "build": "tsc -p .",
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["api wrapper", "trembita plugin", "grammar api", "check grammar", "grammar"],
+  "author": "Oleg Koval <kvl.olg@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^24.0.4",
     "@types/node": "^11.9.3",
+    "jest": "^24.1.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
+    "ts-jest": "^23.10.5",
     "ts-node": "^8.0.2",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
