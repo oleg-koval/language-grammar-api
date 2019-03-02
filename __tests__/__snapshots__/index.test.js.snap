@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`languageToolClient: should respond with "GET /languages" response 1`] = `
+Array [
+  Object {
+    "code": "ast",
+    "longCode": "ast-ES",
+    "name": "Asturian",
+  },
+  Object {
+    "code": "be",
+    "longCode": "be-BY",
+    "name": "Belarusian",
+  },
+  Object {
+    "code": "br",
+    "longCode": "br-FR",
+    "name": "Breton",
+  },
+  Object {
+    "code": "ca",
+    "longCode": "ca-ES",
+    "name": "Catalan",
+  },
+  Object {
+    "code": "ca",
+    "longCode": "ca-ES-valencia",
+    "name": "Catalan (Valencian)",
+  },
+  Object {
+    "code": "zh",
+    "longCode": "zh-CN",
+    "name": "Chinese",
+  },
+  Object {
+    "code": "da",
+    "longCode": "da-DK",
+    "name": "Danish",
+  },
+  Object {
+    "code": "nl",
+    "longCode": "nl",
+    "name": "Dutch",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en",
+    "name": "English",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-AU",
+    "name": "English (Australian)",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-CA",
+    "name": "English (Canadian)",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-GB",
+    "name": "English (GB)",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-NZ",
+    "name": "English (New Zealand)",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-ZA",
+    "name": "English (South African)",
+  },
+  Object {
+    "code": "en",
+    "longCode": "en-US",
+    "name": "English (US)",
+  },
+  Object {
+    "code": "eo",
+    "longCode": "eo",
+    "name": "Esperanto",
+  },
+  Object {
+    "code": "fr",
+    "longCode": "fr",
+    "name": "French",
+  },
+  Object {
+    "code": "gl",
+    "longCode": "gl-ES",
+    "name": "Galician",
+  },
+  Object {
+    "code": "de",
+    "longCode": "de",
+    "name": "German",
+  },
+  Object {
+    "code": "de",
+    "longCode": "de-AT",
+    "name": "German (Austria)",
+  },
+  Object {
+    "code": "de",
+    "longCode": "de-DE",
+    "name": "German (Germany)",
+  },
+  Object {
+    "code": "de",
+    "longCode": "de-CH",
+    "name": "German (Swiss)",
+  },
+  Object {
+    "code": "el",
+    "longCode": "el-GR",
+    "name": "Greek",
+  },
+  Object {
+    "code": "it",
+    "longCode": "it",
+    "name": "Italian",
+  },
+  Object {
+    "code": "ja",
+    "longCode": "ja-JP",
+    "name": "Japanese",
+  },
+  Object {
+    "code": "km",
+    "longCode": "km-KH",
+    "name": "Khmer",
+  },
+  Object {
+    "code": "fa",
+    "longCode": "fa",
+    "name": "Persian",
+  },
+  Object {
+    "code": "pl",
+    "longCode": "pl-PL",
+    "name": "Polish",
+  },
+  Object {
+    "code": "pt",
+    "longCode": "pt",
+    "name": "Portuguese",
+  },
+  Object {
+    "code": "pt",
+    "longCode": "pt-AO",
+    "name": "Portuguese (Angola preAO)",
+  },
+  Object {
+    "code": "pt",
+    "longCode": "pt-BR",
+    "name": "Portuguese (Brazil)",
+  },
+  Object {
+    "code": "pt",
+    "longCode": "pt-MZ",
+    "name": "Portuguese (Moçambique preAO)",
+  },
+  Object {
+    "code": "pt",
+    "longCode": "pt-PT",
+    "name": "Portuguese (Portugal)",
+  },
+  Object {
+    "code": "ro",
+    "longCode": "ro-RO",
+    "name": "Romanian",
+  },
+  Object {
+    "code": "ru",
+    "longCode": "ru-RU",
+    "name": "Russian",
+  },
+  Object {
+    "code": "de-DE-x-simple-language",
+    "longCode": "de-DE-x-simple-language",
+    "name": "Simple German",
+  },
+  Object {
+    "code": "sk",
+    "longCode": "sk-SK",
+    "name": "Slovak",
+  },
+  Object {
+    "code": "sl",
+    "longCode": "sl-SI",
+    "name": "Slovenian",
+  },
+  Object {
+    "code": "es",
+    "longCode": "es",
+    "name": "Spanish",
+  },
+  Object {
+    "code": "sv",
+    "longCode": "sv",
+    "name": "Swedish",
+  },
+  Object {
+    "code": "tl",
+    "longCode": "tl-PH",
+    "name": "Tagalog",
+  },
+  Object {
+    "code": "ta",
+    "longCode": "ta-IN",
+    "name": "Tamil",
+  },
+  Object {
+    "code": "uk",
+    "longCode": "uk-UA",
+    "name": "Ukrainian",
+  },
+]
+`;

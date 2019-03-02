@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageToolClient: should be equal to function 1`] = `[Function]`;
+
+exports[`LanguageToolClient: should have required functionality 1`] = `
+LanguageToolClient {
+  "client": [Function],
+  "endpoint": "https://example.com",
+  "languages": [Function],
+  "log": BufferedConsole {
+    "_buffer": Array [],
+    "_counters": Object {},
+    "_getSourceMaps": [Function],
+    "_groupDepth": 0,
+    "_timers": Object {},
+    "assert": [Function],
+    "clear": [Function],
+    "count": [Function],
+    "countReset": [Function],
+    "dir": [Function],
+    "error": [Function],
+    "group": [Function],
+    "groupCollapsed": [Function],
+    "groupEnd": [Function],
+    "info": [Function],
+    "log": [Function],
+    "time": [Function],
+    "timeEnd": [Function],
+    "trace": [Function],
+    "warn": [Function],
+    Symbol(counts): Map {},
+  },
+  "raw": [Function],
+  "request": [Function],
+}
+`;
