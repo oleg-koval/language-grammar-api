@@ -6,18 +6,27 @@
   "main": "lib/index",
   "scripts": {
     "test": "jest",
-    "format": "prettier --write \"src/**/*.js\""
+    "lint": "eslint --print-config . | eslint-config-prettier-check && eslint ."
   },
   "keywords": [
     "api wrapper",
     "trembita plugin",
     "grammar api",
     "check grammar",
-    "grammar"
+    "grammar",
+    "api",
+    "grammar check",
+    "language tool"
   ],
   "author": "Oleg Koval <kvl.olg@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-sexy": "^5.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.1.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
