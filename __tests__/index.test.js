@@ -17,7 +17,6 @@ describe('languageToolClient:', () => {
     languageToolClient = null;
   });
 
-
   it('should respond with "GET /languages" response', async () => {
     languageToolClient.languages = jest.fn();
     languageToolClient.languages.mockReturnValue(languagesReturnValue.default);

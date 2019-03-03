@@ -1,3 +1,3 @@
 module.exports = {
-  languagesReturnValue: require('./languagesReturnValue')
-}
+  languagesReturnValue: require('./languagesReturnValue'),
+};

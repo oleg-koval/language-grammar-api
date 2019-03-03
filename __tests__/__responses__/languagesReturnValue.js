@@ -43,5 +43,5 @@ module.exports = {
     { name: 'Tagalog', code: 'tl', longCode: 'tl-PH' },
     { name: 'Tamil', code: 'ta', longCode: 'ta-IN' },
     { name: 'Ukrainian', code: 'uk', longCode: 'uk-UA' },
-  ]
+  ],
 };

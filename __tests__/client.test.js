@@ -1,7 +1,7 @@
 const LanguageToolClient = require('../lib/index');
 
 const mockedLogger = () => {
-  return
+  return;
 };
 
 describe('LanguageToolClient:', () => {
