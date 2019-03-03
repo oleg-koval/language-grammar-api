@@ -5,7 +5,7 @@
   "description": "API wrapper for LanguageTool (grammar check) API based as plugin for Trembita.js",
   "main": "lib/index",
   "scripts": {
-    "test": "jest",
+    "test": "jest --config jest.config.js | codecov",
     "lint": "eslint --print-config . | eslint-config-prettier-check && eslint ."
   },
   "keywords": [
@@ -21,6 +21,7 @@
   "author": "Oleg Koval <kvl.olg@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^3.2.0",
     "eslint": "^5.15.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-sexy": "^5.0.0",
