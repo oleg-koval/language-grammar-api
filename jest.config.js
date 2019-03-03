@@ -4,5 +4,5 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/__tests__/__responses__/'],
   // coverageReporters: ['text-summary', 'json' /*, "html"*/],
   collectCoverage: true,
-  coverageDirectory: 'coverage/',
+  coverageDirectory: './coverage/',
 };
