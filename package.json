@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest --config jest.config.js",
     "lint": "eslint --print-config . | eslint-config-prettier-check && eslint .",
-    "coverage": "codecov"
+    "coverage": "codecov",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "api wrapper",
