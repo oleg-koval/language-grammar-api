@@ -1,7 +1,12 @@
 {
   "name": "language-grammar-api",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleg-koval/language-grammar-api"
+  },
+  "issues": "https://github.com/oleg-koval/language-grammar-api/issues",
   "description": "API wrapper for LanguageTool (grammar check) API based as plugin for Trembita.js",
   "main": "lib/index",
   "scripts": {
@@ -22,6 +27,9 @@
   ],
   "author": "Oleg Koval <kvl.olg@gmail.com>",
   "license": "ISC",
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
+  },
   "devDependencies": {
     "codecov": "^3.2.0",
     "eslint": "^5.15.0",
