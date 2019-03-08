@@ -1,5 +1,5 @@
 module.exports = {
-  default: [
+  DEFAULT: [
     { name: 'Asturian', code: 'ast', longCode: 'ast-ES' },
     { name: 'Belarusian', code: 'be', longCode: 'be-BY' },
     { name: 'Breton', code: 'br', longCode: 'br-FR' },
