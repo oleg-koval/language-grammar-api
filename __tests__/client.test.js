@@ -14,4 +14,13 @@ describe('LanguageToolClient:', () => {
     const dummyClient = new LanguageToolClient({ endpoint: 'https://example.com' });
     expect(dummyClient.languages).toMatchSnapshot();
   });
+
+  it('should be equal to function', () => {
+    const dummyClient = new LanguageToolClient({ endpoint: 'https://example.com' });
+    expect(dummyClient.check).toMatchSnapshot();
+  });
+
+  it.only('Should throw error with missing options', () => {
+    expect(() => new LanguageToolClient()).toThrowErrorMatchingSnapshot();
+  });
 });
