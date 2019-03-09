@@ -20,7 +20,7 @@ describe('LanguageToolClient:', () => {
     expect(dummyClient.check).toMatchSnapshot();
   });
 
-  it.only('Should throw error with missing options', () => {
+  it('Should throw error with missing options', () => {
     expect(() => new LanguageToolClient()).toThrowErrorMatchingSnapshot();
   });
 });
