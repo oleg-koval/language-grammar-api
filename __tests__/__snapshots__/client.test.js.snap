@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`LanguageToolClient: Should throw error with missing options 1`] = `"missing options"`;
+
 exports[`LanguageToolClient: should be equal to function 1`] = `[Function]`;
+
+exports[`LanguageToolClient: should be equal to function 2`] = `[Function]`;
 
 exports[`LanguageToolClient: should have required functionality 1`] = `
 LanguageToolClient {
+  "check": [Function],
   "client": [Function],
   "endpoint": "https://example.com",
   "languages": [Function],

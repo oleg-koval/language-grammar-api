@@ -219,3 +219,264 @@ Array [
   },
 ]
 `;
+
+exports[`languageToolClient: should respond with "POST /check" response (400) with invalid params, missing language param 1`] = `"Error: Missing 'language' parameter, e.g. 'language=en-US' for American English or 'language=fr' for French"`;
+
+exports[`languageToolClient: should respond with "POST /check" response (500) with no params 1`] = `"Error: Internal Error: Missing 'text' or 'data' parameter"`;
+
+exports[`languageToolClient: should respond with "POST /check" response with valid params 1`] = `
+Object {
+  "language": Object {
+    "code": "en-US",
+    "detectedLanguage": Object {
+      "code": "en-US",
+      "confidence": 0.99,
+      "name": "English (US)",
+    },
+    "name": "English (US)",
+  },
+  "matches": Array [],
+  "software": Object {
+    "apiVersion": 1,
+    "buildDate": "2019-03-08 21:02",
+    "name": "LanguageTool",
+    "premium": false,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": "",
+    "version": "4.5-SNAPSHOT",
+  },
+  "warnings": Object {
+    "incompleteResults": false,
+  },
+}
+`;
+
+exports[`languageToolClient: should respond with "POST /check" response with valid params, incorrect text 1`] = `
+Object {
+  "language": Object {
+    "code": "en-US",
+    "detectedLanguage": Object {
+      "code": "de-DE",
+      "confidence": 0.66,
+      "name": "German (Germany)",
+    },
+    "name": "English (US)",
+  },
+  "matches": Array [
+    Object {
+      "context": Object {
+        "length": 6,
+        "offset": 0,
+        "text": "dasnds dasdas sadasd",
+      },
+      "contextForSureMatch": 0,
+      "ignoreForIncompleteSentence": false,
+      "length": 6,
+      "message": "Possible spelling mistake found",
+      "offset": 0,
+      "replacements": Array [
+        Object {
+          "value": "bands",
+        },
+        Object {
+          "value": "hands",
+        },
+        Object {
+          "shortDescription": "plural of 'land'",
+          "value": "lands",
+        },
+        Object {
+          "value": "sands",
+        },
+        Object {
+          "value": "Danes",
+        },
+        Object {
+          "value": "dashes",
+        },
+        Object {
+          "value": "Davids",
+        },
+        Object {
+          "value": "dandy",
+        },
+        Object {
+          "value": "wands",
+        },
+        Object {
+          "value": "dads",
+        },
+        Object {
+          "value": "dawns",
+        },
+        Object {
+          "value": "deists",
+        },
+        Object {
+          "value": "deigns",
+        },
+        Object {
+          "value": "darns",
+        },
+        Object {
+          "value": "daunts",
+        },
+        Object {
+          "value": "damns",
+        },
+        Object {
+          "value": "dangs",
+        },
+      ],
+      "rule": Object {
+        "category": Object {
+          "id": "TYPOS",
+          "name": "Possible Typo",
+        },
+        "description": "Possible spelling mistake",
+        "id": "MORFOLOGIK_RULE_EN_US",
+        "issueType": "misspelling",
+      },
+      "sentence": "dasnds dasdas sadasd",
+      "shortMessage": "Spelling mistake",
+      "type": Object {
+        "typeName": "Other",
+      },
+    },
+    Object {
+      "context": Object {
+        "length": 6,
+        "offset": 7,
+        "text": "dasnds dasdas sadasd",
+      },
+      "contextForSureMatch": 0,
+      "ignoreForIncompleteSentence": false,
+      "length": 6,
+      "message": "Possible spelling mistake found",
+      "offset": 7,
+      "replacements": Array [
+        Object {
+          "value": "Dallas",
+        },
+        Object {
+          "value": "NASDAQ",
+        },
+        Object {
+          "value": "Dada",
+        },
+        Object {
+          "value": "dashes",
+        },
+        Object {
+          "value": "pandas",
+        },
+        Object {
+          "value": "dads",
+        },
+        Object {
+          "value": "dachas",
+        },
+        Object {
+          "value": "deists",
+        },
+        Object {
+          "value": "pashas",
+        },
+        Object {
+          "value": "pastas",
+        },
+        Object {
+          "value": "Adas",
+        },
+        Object {
+          "value": "Haidas",
+        },
+      ],
+      "rule": Object {
+        "category": Object {
+          "id": "TYPOS",
+          "name": "Possible Typo",
+        },
+        "description": "Possible spelling mistake",
+        "id": "MORFOLOGIK_RULE_EN_US",
+        "issueType": "misspelling",
+      },
+      "sentence": "dasnds dasdas sadasd",
+      "shortMessage": "Spelling mistake",
+      "type": Object {
+        "typeName": "Other",
+      },
+    },
+    Object {
+      "context": Object {
+        "length": 6,
+        "offset": 14,
+        "text": "dasnds dasdas sadasd",
+      },
+      "contextForSureMatch": 0,
+      "ignoreForIncompleteSentence": false,
+      "length": 6,
+      "message": "Possible spelling mistake found",
+      "offset": 14,
+      "replacements": Array [
+        Object {
+          "value": "salad",
+        },
+        Object {
+          "value": "sagas",
+        },
+        Object {
+          "value": "salads",
+        },
+        Object {
+          "value": "Sadat",
+        },
+        Object {
+          "value": "sadism",
+        },
+        Object {
+          "value": "sadist",
+        },
+        Object {
+          "value": "sodas",
+        },
+        Object {
+          "value": "Adas",
+        },
+        Object {
+          "value": "Salas",
+        },
+        Object {
+          "value": "sades",
+        },
+      ],
+      "rule": Object {
+        "category": Object {
+          "id": "TYPOS",
+          "name": "Possible Typo",
+        },
+        "description": "Possible spelling mistake",
+        "id": "MORFOLOGIK_RULE_EN_US",
+        "issueType": "misspelling",
+      },
+      "sentence": "dasnds dasdas sadasd",
+      "shortMessage": "Spelling mistake",
+      "type": Object {
+        "typeName": "Other",
+      },
+    },
+  ],
+  "software": Object {
+    "apiVersion": 1,
+    "buildDate": "2019-03-08 21:02",
+    "name": "LanguageTool",
+    "premium": false,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": "",
+    "version": "4.5-SNAPSHOT",
+  },
+  "warnings": Object {
+    "incompleteResults": false,
+  },
+}
+`;
