@@ -1,46 +1,3 @@
-# version: 2.1
-# jobs:
-#   test_node_6:
-#      - image: circleci/node:6
-#      steps:
-#       - checkout
-#       - run:
-#           name: install
-#           command: npm install
-#       - run:
-#           name: lint
-#           command: npm run lint
-#       - run:
-#           name: test
-#           command: npm test
-#       - run:
-#           name: coverage
-#           command: npm run coverage
-#       - run:
-#           name: release
-#           command: npm run semantic-release || true
-#   build:
-#     docker:
-#       - image: "circleci/node:latest"
-#     steps:
-#       - checkout
-#       - run:
-#           name: install
-#           command: npm install
-#       - run:
-#           name: lint
-#           command: npm run lint
-#       - run:
-#           name: test
-#           command: npm test
-#       - run:
-#           name: coverage
-#           command: npm run coverage
-#       - run:
-#           name: release
-#           command: npm run semantic-release || true
-
-
 version: 2
 jobs:
   test_node_8:
@@ -60,9 +17,6 @@ jobs:
       - run:
           name: coverage
           command: npm run coverage
-      # - run:
-      #     name: release
-      #     command: npm run semantic-release || true
   test_node_10:
     docker:
       - image: circleci/node:10
@@ -80,10 +34,6 @@ jobs:
       - run:
           name: coverage
           command: npm run coverage
-      # - run:
-      #     name: release
-      #     command: npm run semantic-release || true
-
   release:
     docker:
       - image: circleci/node:10
