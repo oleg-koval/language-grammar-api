@@ -1,54 +1,45 @@
 version: 2
+
+.steps: &steps
+  steps:
+  - checkout
+  - run:
+      name: install
+      command: npm install
+  - run:
+      name: lint
+      command: npm run lint
+  - run:
+      name: test
+      command: npm test
+  - run:
+      name: coverage
+      command: npm run coverage
+
 jobs:
   test_node_8:
     docker:
-      - image: circleci/node:8
-    steps:
-      - checkout
-      - run:
-          name: install
-          command: npm install
-      - run:
-          name: lint
-          command: npm run lint
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: coverage
-          command: npm run coverage
+    - image: circleci/node:8
+    <<: *steps
   test_node_10:
     docker:
-      - image: circleci/node:10
-    steps:
-      - checkout
-      - run:
-          name: install
-          command: npm install
-      - run:
-          name: lint
-          command: npm run lint
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: coverage
-          command: npm run coverage
+    - image: circleci/node:10
+    <<: *steps
   release:
     docker:
-      - image: circleci/node:10
+    - image: circleci/node:10
     steps:
-      - checkout
-      - run: npm install
-      - run: npx semantic-release
+    - checkout
+    - run: npm install
+    - run: npx semantic-release
 
 workflows:
   version: 2
   test_and_release:
     jobs:
-      - test_node_8
-      - test_node_10
-      - release:
-          requires:
-            - test_node_8
-            - test_node_10
+    - test_node_8
+    - test_node_10
+    - release:
+        requires:
+        - test_node_8
+        - test_node_10
