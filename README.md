@@ -35,7 +35,7 @@ const languages = await languageToolClient.languages();
 ```js
 const check = await languageToolClient.check({
   text: 'Amazing text to check', // required
-  language: 'en_US' // required (you can use .languages call to get language)
+  language: 'en-US' // required (you can use .languages call to get language)
 });
 ```
 
