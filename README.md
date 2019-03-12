@@ -1,7 +1,7 @@
 node.js grammar / language tool api
 ===================================
 
-[![codecov](https://codecov.io/gh/oleg-koval/language-grammar-api/branch/master/graph/badge.svg)](https://codecov.io/gh/oleg-koval/language-grammar-api) [![CircleCI](https://circleci.com/gh/oleg-koval/language-grammar-api/tree/master.svg?style=svg)](https://circleci.com/gh/oleg-koval/language-grammar-api/tree/master)
+[![codecov](https://codecov.io/gh/oleg-koval/language-grammar-api/branch/master/graph/badge.svg)](https://codecov.io/gh/oleg-koval/language-grammar-api) [![CircleCI](https://circleci.com/gh/oleg-koval/language-grammar-api/tree/master.svg?style=svg)](https://circleci.com/gh/oleg-koval/language-grammar-api/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/oleg-koval/language-grammar-api.svg)](https://greenkeeper.io/)
 
 # About
 
