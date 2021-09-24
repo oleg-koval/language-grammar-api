@@ -44,6 +44,6 @@
     "semantic-release": "15.13.3"
   },
   "dependencies": {
-    "trembita": "^1.0.5"
+    "trembita": "^1.2.25"
   }
 }
